@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:state_selected="true"
+    android:state_pressed="true"
+    android:state_focused="true"
+    android:clickable="true"
+    android:contextClickable="true">
+
+
+    <TextView android:id="@+id/descripcion"
+        android:focusable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:state_selected="true"
+        android:state_pressed="true" />
+    <TextView
+        android:state_selected="false"
+        android:focusable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fechahora"
+        android:textColor="@color/colorPrimaryDark"
+        />
+    <TextView
+        android:state_selected="false"
+        android:focusable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/moneda"
+        android:textColor="@color/colorPrimaryDark"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <CheckBox
+            android:state_selected="false"
+            android:focusable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New CheckBox"
+            android:id="@+id/checkBox" />
+
+    </LinearLayout>
+
+</LinearLayout>
